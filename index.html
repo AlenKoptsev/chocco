@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./normalize.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">    
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">   
+  <script src="js/slide-show.js"></script> 
   <title>Chocco</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
             </ul>
           </nav>
           <div class="contacts">
-            <img src="./img/Phone.png" alt="" class="contacts__img contacts__img--header">
+            <img src="./svg/phone-white.svg" alt="" class="contacts__img contacts__img--header">
             <a href="/" class="contacts__phone contacts__phone--header">8 800 903 90 90</a>
           </div>
           <div class="hamburger">
@@ -67,7 +68,7 @@
         <div class="homepage__info">
           <ul class="homepage__info-list">
             <li class="homepage__info-item">
-              <img src="./img/lifes.png" alt="" class="homepage__info-logo truck--img">
+              <img src="./svg/life.svg" alt="" class="homepage__info-logo">
               <p class="homepage__info-description">
                 100%<br>
                 натуральный<br>
@@ -75,7 +76,7 @@
               </p>
             </li>
             <li class="homepage__info-item">
-              <img src="./img/truck.png" alt="" class="homepage__info-logo">
+              <img src="./svg/bus.svg" alt="" class="homepage__info-logo">
               <p class="homepage__info-description">
                 3-5 дней<br>
                 доставка<br>
@@ -83,7 +84,7 @@
               </p>
             </li>
             <li class="homepage__info-item">
-              <img src="./img/measure.png" alt="" class="homepage__info-logo">
+              <img src="./svg/measure.svg" alt="" class="homepage__info-logo">
               <p class="homepage__info-description">
                 Не портит<br>
                 фигуру
@@ -107,7 +108,7 @@
             <ul class="answer-why__list">
               <li class="answer-why__item">
                 <div class="answer-why__item-cover">
-                  <img src="./img/happy-person.png" alt="" class="answer-why__item-img">
+                  <img src="./svg/healthy.svg" alt="" class="answer-why__item-img">
                 </div>
                 <div class="answer-why__explain">
                   <h3 class="answer-why__item-title">Полезно</h3>
@@ -120,7 +121,7 @@
               </li>
               <li class="answer-why__item">
                 <div class="answer-why__item-cover">
-                  <img src="./img/emoji_fell-in-love.png" alt="" class="answer-why__item-img">
+                  <img src="./svg/teasty.svg" alt="" class="answer-why__item-img">
                 </div>
                 <div class="answer-why__explain">
                   <h3 class="answer-why__item-title">Полезно</h3>
@@ -133,7 +134,7 @@
               </li>
               <li class="answer-why__item">
                 <div class="answer-why__item-cover">
-                  <img src="./img/arm.png" alt="" class="answer-why__item-img">
+                  <img src="./svg/nutritiously.svg" alt="" class="answer-why__item-img">
                 </div>
                 <div class="answer-why__explain">
                   <h3 class="answer-why__item-title">Полезно</h3>
@@ -149,36 +150,125 @@
         </div>
       </div>
     </section>
+    <section class="slider">
+      <div class="container slider-container">
+        <div class="arrow arrow--left">
+          <img src="./img/arrow-left.png" alt="" class="arrow-img arrow-img--left">
+        </div>
+        <ul class="slider-offer__list">
+          <li class="slider-offer-item">
+            <div class="slider-offer">
+              <div class="slider-picture">
+                <img src="./img/Товар.png" alt="" class="slider-picture__img">
+              </div>
+              <div class="slider-text">
+                <div class="dropdown">
+                  <img src="./img/click.png" alt="" class="slider-text__logo">
+                  <div class="dropdown-menu">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item">
+                        <img src="./svg/grapes.svg" alt="grapes" class="dropdown__item-img">
+                        <div class="dropdown__item-title">Виноград</div>
+                        <div class="dropdown__item-title">Виноград</div>
+                        <div class="dropdown__item-title">Виноград</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 class="slider-text__title">
+                  Батончик “Гранола виноград”
+                </h2>
+                <p class="slider-text__description">
+                  Гранола из винограда, грецкого ореха и кунжутных семечек.
+                  В состав также входят: сухое молоко, заменитель сахара и какао бобы.
+                </p>
+                <ul class="slider-text__list">
+                  <li class="slider-text__item">
+                    Калорийность <span class="dark-text">110 ккал</span>
+                  </li>
+                  <li class="slider-text__item">
+                    Вес <span class="dark-text">95 грамм</span>
+                  </li>
+                </ul>
+                <div class="slider-text__buy">
+                  <text class="slider-text__price">140 ₽</text> 
+                  <div class="button button--green">
+                    Заказать
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="arrow arrow--right">
+          <img src="./img/arrow-right.png" alt="" class="arrow-img arrow-img--right">
+        </div>
+      </div>
+    </section>
     <section class="reviews">
       <div class="container reviews-container">
         <h2 class="reviews__title">отзывы</h2>
-        <div class="reviews__block">
-          <div class="reviews__panel">
-            <img src="./img/Rectangle 7.png" alt="" class="review__img">
-              <div class="review">
-              <h3 class="review__title">Лучший перекус</h3>
-              <p class="review__description">
-                Я ем малыми порциями, но часто. Это повышает мою
-                продуктивность в разы. В течение дня сижу за компьютером
-                и часто отходить в кафе или на кухню просто не могу себе
-                позволить. А батончик – он всегда под рукой. Это приятно
-                и удобно.
-              </p>
-              <h4 class="review__user-name">Алёна Хмельницкая</h4>
-            </div>
-          </div>
-          <ul class="reviews__users-list">
-            <li class="reviews__users-item">
-              <img src="./img/Rectangle 5.png" alt="" class="reviews__users-img">
+          <ul class="reviews__list">
+            <li class="reviews__item active" data-linked-width="one">
+              <img src="./img/Rectangle 7.png" alt="" class="review__img">
+                <div class="review">
+                  <h3 class="review__title">Лучший перекус</h3>
+                  <p class="review__description">
+                    Я ем малыми порциями, но часто. Это повышает мою
+                    продуктивность в разы. В течение дня сижу за компьютером
+                    и часто отходить в кафе или на кухню просто не могу себе
+                    позволить. А батончик – он всегда под рукой. Это приятно
+                    и удобно.
+                  </p>
+                  <h4 class="review__user-name">Алёна Хмельницкая</h4>
+                </div>
+              </li>
+            <li class="reviews__item" data-linked-width="two">
+              <img src="./img/Rectangle 7.png" alt="" class="review__img">
+                <div class="review">
+                  <h3 class="review__title">Идеально подходят для спортсменов</h3>
+                  <p class="review__description">
+                    После тренировок всегда хочется быстро закинуться чем-то 
+                    белковым, потому что до дома ещё нужно доехать. 
+                    А кушать хочется. Протеиновые батончики всегда выручают в этом плане. 
+                    Спасибо производителю за этот качественный и экологичный продукт. 
+                  </p>
+                  <h4 class="review__user-name">Вадим Грачев</h4>
+                </div>
             </li>
-            <li class="reviews__users-item">
-              <img src="./img/reviews-photo1.png" alt="" class="reviews__users-img">
-            </li>
-            <li class="reviews__users-item">
-              <img src="./img/reviews-photo2.png" alt="" class="reviews__users-img">
+            <li class="reviews__item" data-linked-width="three">
+              <img src="./img/Rectangle 7.png" alt="" class="review__img">
+                <div class="review">
+                  <h3 class="review__title">Лучшие батончики премиум уровня</h3>
+                  <p class="review__description">
+                    Батончики понравились. На мой взгляд слегка завышена цена по сравнению с 
+                    конкурентами, однако, как говорится – оно того стоит. Нравится носить с 
+                    собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют 
+                    голод, хоть и не надолго. Через час уже ем ещё один. 
+                    Но это скорее плюс, чем минус.
+                  </p>
+                  <h4 class="review__user-name">Мария Орлова</h4>
+                </div>
             </li>
           </ul>
-        </div>
+          <ul class="reviews__users-list">
+            <li class="reviews__users-item active">
+              <a class="reviews__users-link" data-open="one">
+                <img src="./img/Rectangle 5.png" alt="" class="reviews__users-img"> 
+              </a>
+            </li>
+            <li class="reviews__users-item">
+              <a class="reviews__users-link" data-open="two">
+                <img src="./img/reviews-photo1.png" alt="" class="reviews__users-img">
+              </a>
+            </li>
+            <li class="reviews__users-item">
+              <a class="reviews__users-link" data-open="three">
+                <img src="./img/reviews-photo2.png" alt="" class="reviews__users-img">
+              </a>             
+            </li>
+          </ul>
+
       </div> 
     </section>
     <section class="ordering">
@@ -230,19 +320,19 @@
               </div>
               <div class="form__controls">
                 <label class="radio">
-                  <input name="option" class="radio__elem">
+                  <input type="radio" checked name="option" class="radio__elem">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Потрбуется сдача</div>
                 </label>
                 <label class="radio">
-                  <input name="option" class="radio__elem">
+                  <input type="radio" name="option" class="radio__elem">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Потрбуется сдача</div>
                 </label>
               </div>
               <div class="form__controls">
                 <label class="radio radio--checkbox">
-                  <input class="radio__elem">
+                  <input type="checkbox" class="radio__elem">
                   <div class="radio__visible"></div>
                   <div class="radio__title">Потрбуется сдача</div>
                 </label>  
@@ -266,26 +356,26 @@
         <div class="footer__contacts">
           <div class="address">Москва, ул.Новый Арбат, д.31/12</div>
           <div class="contacts">
-            <img src="./img/phone-dark.png" alt="" class="contacts__img">
+            <img src="./svg/phone-dark.svg" alt="" class="contacts__img">
             <a href="/" class="contacts__phone contacts__phone--footer">8 800 903 90 90</a>
           </div>
        </div>
        <div class="social">
          <ul class="social__list">
            <li class="social__item">
-             <img src="./img/vk.png" alt="" class="social__logo">
+             <img src="./svg/vk.svg" alt="" class="social__logo">
              <a href="#" class="social__link"></a>
             </li>
             <li class="social__item">
-              <img src="./img/faceb.png" alt="" class="social__logo">
+              <img src="./svg/fc.svg" alt="" class="social__logo">
               <a href="#" class="social__link"></a>
              </li>
              <li class="social__item">
-              <img src="./img/insta.png" alt="" class="social__logo">
+              <img src="./svg/inst.svg" alt="" class="social__logo">
               <a href="#" class="social__link"></a>
              </li>
              <li class="social__item">
-              <img src="./img/twit.png" alt="" class="social__logo">
+              <img src="./svg/tw.svg" alt="" class="social__logo">
               <a href="#" class="social__link"></a>
              </li>
          </ul>

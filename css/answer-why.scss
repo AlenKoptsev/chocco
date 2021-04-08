@@ -1,0 +1,111 @@
+.answer-why {
+  background: url("./img/big-life.png") left top rem(200px) no-repeat;
+  background-color: #fff;
+  font-size: rem(18px);
+
+  @include phones{
+    background: none;
+  }
+}
+
+.answer-container{
+  display: flex;
+  flex-direction: column;
+  color: #666666;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  
+}
+
+.answer-why__title {
+  text-transform: uppercase;
+  font-size: rem(48px);
+  font-weight: 700;
+  color: #292929;
+  margin-bottom: rem(22px);
+}
+
+.answer-why__description {
+  margin-bottom: rem(45px);
+}
+
+.answer-why__item-cover {
+  display: inline-block;
+  position: relative;
+  width: rem(128px);
+  height: rem(128px);
+  background: #F2F5F4;
+  border-radius: 50%;
+  margin: 0 auto;
+  vertical-align: center;
+}
+
+.answer-why__item-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.answer-why__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.answer-why__item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include phones {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.answer-why__item:last-child::before {
+  display: none;
+}
+
+.answer-why__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-why__item-title {
+  margin-top: rem(20px);
+  margin-bottom: rem(20px);
+  color: #292929;
+  font-size: rem(27px);
+  font-weight: 700;
+}
+
+.answer-why__description {
+  width: 46%;
+}
+
+.answer-why__explain {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.answer-why__item-description {
+  width: 90%;
+  @include tablets{
+    width: 90%;
+  }
+  @include phones{
+    width: 100%;
+  }
+
+}

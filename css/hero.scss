@@ -1,0 +1,179 @@
+.hero {
+  background: url("./img/Батончики.png") bottom rem(80px) right rem(150px) no-repeat, url("./img/узор 1.png") bottom right no-repeat;
+  background-color: #61C4D9;
+
+  @include tablets {
+    background-position: bottom 88% right;
+  }
+
+}
+
+.hero-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablets {
+    background: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: rem(24px);
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  
+  @include tablets {
+  width: rem(24px);
+  height: rem(20px);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+}
+
+.hamburger__plank {
+  display: none;
+
+  @include tablets {
+  display: block;
+  background: #fff;
+  height: rem(4px);
+  border-radius: rem(10px);
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.contacts__phone--header {
+  @include tablets {
+    display: none;
+  }
+}
+
+.contacts__img {
+  margin-top: rem(7px);
+}
+
+.contacts__img--header { 
+  @include tablets {
+    display: none;
+  }
+}
+
+.homepage__info {
+  @include tablets {
+    display: none;
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  display: inline;
+  margin-right: rem(27px);
+}
+
+.menu__item:last-child {
+  margin: 0;
+}
+
+.menu__link {
+  white-space: nowrap;
+}
+
+.contacts {
+  display: inline-flex;
+}
+
+.contacts__img {
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(6px);
+}
+
+.contacts__phone {
+  font-size: rem(22px);
+}
+
+.homepage__offer {
+  width: 46%;
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      content: url("./img/Батончики-tablet.png");
+    }
+
+  }
+}
+
+.homepage__offer-title {
+  margin-bottom: rem(20px);
+  font-weight: 700;
+  font-size: rem(48px);
+  text-transform: uppercase;
+}
+
+.homepage__offer-description {
+  width: 85%;
+  font-size: rem(21px);
+  margin-bottom: rem(32px);
+
+  @include phones {
+    width: 70%;
+    }
+}
+
+.button {
+  font-size: 16x;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: rem(18px) rem(39px);
+  border-radius: rem(100px);
+  background: #fff;
+  color: #365A49;
+  border: none;
+}
+
+.button--white {
+  margin-bottom: rem(64px);
+}
+
+.homepage__info-logo {
+  margin-right: rem(13px);
+}
+
+.homepage__info-item {
+  display: inline-flex;
+  font-size: rem(16px);
+  align-items: flex-start;
+  margin-right: rem(30px);
+  margin-bottom: rem(50px);
+}
+.homepage__info-item:last-child {
+  margin-left: rem(30px);
+}

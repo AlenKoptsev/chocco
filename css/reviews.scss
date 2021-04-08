@@ -1,0 +1,87 @@
+.reviews {
+  background-color: #fff;
+}
+
+.reviews-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  padding-top: rem(62px);
+  color: #292929;
+  text-align: center;
+  justify-content: center;
+}
+
+.reviews__title {
+  margin-bottom: rem(36px);
+  text-transform: uppercase;
+  font-size: rem(48px);
+  font-weight: 700;
+}
+
+.reviews__item.active {
+  display: inline-flex;
+}
+
+.reviews__item {
+  display: none;
+  background: url("../img/review-flower.png") right top rem(40px) no-repeat;
+  background-color: #F8FAF9;
+  padding: rem(42px) rem(42px) rem(42px) rem(42px);
+  text-align: start;
+  margin-bottom: rem(15px);
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.review__title {
+  font-size: rem(27px);
+  font-weight: 700;
+  margin-bottom: rem(20px);
+}
+
+.review__description {
+  color: #666;
+  margin-bottom: rem(25px);
+}
+
+.review__user-name {
+  font-weight: 500;
+}
+
+.review__img {
+  margin-right: rem(40px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+    margin: 0;
+  }
+}
+
+.review {
+  padding-right: 100px;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.reviews__users-item {
+  display: inline-flex;
+  margin-bottom: rem(63px);
+  margin-right: rem(6px);
+}
+
+.reviews__users-item:last-child {
+  margin-right: 0;
+}
